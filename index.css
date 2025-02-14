@@ -1,0 +1,156 @@
+/* Import Correct Font */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Styling */
+.title {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 28px;
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Counter Section */
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.counter-box {
+    background-color: white;
+    border: 3px solid black;
+    padding: 5px 15px;
+    box-shadow: 4px 4px black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+/* Input Box */
+.counter-box input {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    background: none;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: white;
+    border: 3px solid black;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 6px 6px black;
+    display: inline-block;
+    border-radius: 8px;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Pothole Feed Button */
+.feed-btn {
+    background-color: white;
+    border: 3px solid black;
+    padding: 12px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 6px 6px black;
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.feed-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Image Section */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-box {
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px;
+    box-shadow: 6px 6px black;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+/* View Location Button */
+.location-btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+    color: black;
+    margin-top: 10px;
+    box-shadow: 4px 4px black;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.location-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    border: 3px solid black;
+    padding: 10px;
+    box-shadow: 6px 6px black;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
