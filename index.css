@@ -26,6 +26,7 @@ body {
     align-items: center;
     gap: 15px;
     margin: 20px 0;
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
 }
 
 .counter-box {
@@ -37,6 +38,7 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 18px;
+    flex: 1 1 150px; /* Allow counter boxes to grow and shrink */
 }
 
 /* Input Box */
@@ -153,4 +155,73 @@ body {
     font-size: 14px;
     text-align: center;
     font-family: 'Patrick Hand', cursive;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    /* Counter Section */
+    .counter-container {
+        flex-direction: column; /* Stack counters vertically on smaller screens */
+    }
+
+    .counter-box {
+        flex: 1 1 100%; /* Counter boxes will now take full width */
+        margin-bottom: 10px;
+    }
+
+    /* Submit and Feed Buttons */
+    .submit-btn,
+    .feed-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+
+    /* Image Section */
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 90%; /* Images will take most of the screen */
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .counter-box input {
+        font-size: 18px;
+        width: 40px;
+    }
+
+    .counter-box {
+        font-size: 16px;
+    }
+
+    .submit-btn,
+    .feed-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .location-btn {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
 }
